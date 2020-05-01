@@ -1,0 +1,177 @@
+/* ============
+==== GERAL ====
+============ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,700&display=swap');
+
+:root {
+    --primary-color: #3c455c;
+    --secondary-color: #f7df1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color);
+}
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.links {
+    font-size: 22px;
+}
+
+.links a {
+    position: relative;
+    text-decoration: none;
+    color: #9aacb8;
+}
+
+.links a + a {
+    margin-left: 32px;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.links a:hover {
+    color: var(--primary-color);
+}
+
+.links a:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    opacity: 0;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.links a:hover::after {
+    opacity: 1;
+    bottom: -6px;
+}
+
+/* ============
+==== CARD ====
+============ */
+
+.card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 45px auto;
+    width: 800px;
+    min-height: 400px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.4);
+    animation: to-up 700ms ease-out;
+}
+
+@keyframes to-up{
+    from {
+        opacity: 0;
+        transform: translateY(50px)
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    padding: 8px 0;
+    border-top: 1px solid #ddd;
+}
+
+.details .item:first-child {
+    border: none;
+}
+
+.details .item:last-of-type {
+    border-bottom: 1px solid #ddd;
+}
+
+.details h3,
+.details .item div:nth-of-type(1) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+}
+
+.details .item div:nth-of-type(2) {
+    font-weight: bold;
+    color: #555;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.details .item span {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 4px;
+    padding: 8px 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #777;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+}
+
+/* ============
+==== INPUT ====
+============ */
+
+input,
+select {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    background-color: #f5f5f5;
+    outline: none;
+}
+
+input[type="radio"] {
+    margin-right: 4px;
+    width: initial;
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    margin-top: 32px;
+    padding: 8px 0;
+    width: 100%;
+    font-size: 16px;
+    color: #f5f5f5;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
