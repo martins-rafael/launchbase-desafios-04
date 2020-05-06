@@ -1,0 +1,24 @@
+{
+  "teachers": [
+    {
+        "id": 1,
+        "avatar_url": "https://source.unsplash.com/collection/8874679/500x500",
+        "name": "Lorem da Silva",
+        "birth": 641520000000,
+        "education": "superior",
+        "class_type": "EAD",
+        "services": "English, História",
+        "created_at": 1588348441958
+      },
+      {
+        "id": 2,
+        "avatar_url": "https://source.unsplash.com/collection/8874679/500x500",
+        "name": "Ipsum da Silva",
+        "birth": 483753600000,
+        "education": "mestrado",
+        "class_type": "Presencial",
+        "services": "Física, Matemática",
+        "created_at": 1588348541345
+      }
+  ]
+}
