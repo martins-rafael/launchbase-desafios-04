@@ -59,12 +59,12 @@ exports.edit = function (req, res) {
         return teacher.id == id
     })
 
+    if (!foundTeacher) return res.send('Professor não encontrado!')
+    
     const teacher = {
         ...foundTeacher,
         birth: date(foundTeacher.birth)
     }
-
-    if (!foundTeacher) return res.send('Professor não encontrado!')
 
     return res.render('teachers/edit', { teacher })
 }
