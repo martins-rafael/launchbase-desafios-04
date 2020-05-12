@@ -177,6 +177,10 @@ a.buttom {
     cursor: pointer;
 }
 
+button#create-btn {
+    width: 100%;
+}
+
 a.buttom {
     width: 100%;
     display: block;

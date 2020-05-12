@@ -11,13 +11,12 @@
                 {% include 'teachers/fields.njk' %}
 
                 <input type="hidden" name="id" value="{{teacher.id}}">
+                <button type="submit">Salvar</button>                
             </form>
             <form id="delete-form" method="POST" action="/teachers?_method=DELETE">
                 <input type="hidden" name="id" value="{{teacher.id}}">
                 <button type="submit">Excluir</button>
             </form>
         </section>
-
     </div>
-
 {% endblock content %}
