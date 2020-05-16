@@ -1,0 +1,53 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Bianca Ipsum",
+      "email": "bianca@email.com",
+      "birth": 1044057600000,
+      "education": "3EM",
+      "weekly_classes": 6
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "name": "João Lorem",
+      "email": "joao@email.com",
+      "birth": 1075939200000,
+      "education": "2EM",
+      "weekly_classes": 4
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1517256673644-36ad11246d21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Alison Nunes",
+      "email": "alison@email.com",
+      "birth": 1153872000000,
+      "education": "9EF",
+      "weekly_classes": 2
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "name": "Lorem da Silva",
+      "birth": 641520000000,
+      "education": "superior",
+      "class_type": "EAD",
+      "services": "English, História",
+      "created_at": 1588348441958
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80",
+      "name": "Alex de Souza",
+      "birth": 478483200000,
+      "education": "mestrado",
+      "class_type": "Presencial",
+      "services": "Física, Matemática",
+      "created_at": 1588348541345
+    }
+  ]
+}

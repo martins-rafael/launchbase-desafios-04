@@ -1,0 +1,45 @@
+<div class="item-wraper">
+    <div class="item">
+        <div>URL do Avatar</div>
+        <div>
+            <input type="url" name="avatar_url" placeholder="http://" value="{{teacher.avatar_url}}">
+        </div>
+    </div>
+    <div class="item">
+        <div>Nome completo</div>
+        <div>
+            <input type="text" name="name" placeholder="Nome do professor" value="{{teacher.name}}">
+        </div>
+    </div>
+    <div class="item">
+        <div>Data de nascimento</div>
+        <div>
+            <input type="date" name="birth" value="{{teacher.birth}}">
+        </div>
+    </div>
+    <div class="item">
+        <div>Grau de escolaridade</div>
+        <div>
+            <select name="education">
+                <option disabled="disabled" selected="selected" value="value">Selecione uma opção</option>
+                <option value="medio" {% if teacher.education == "medio" %} selected="selected" {% endif %}>Ensino Médio Completo</option>
+                <option value="superior" {% if teacher.education == "superior" %} selected="selected" {% endif %}>Ensino Superior Completo</option>
+                <option value="mestrado" {% if teacher.education == "mestrado" %} selected="selected" {% endif %}>Mestrado</option>
+                <option value="doutorado" {% if teacher.education == "dotourado" %} selected="selected" {% endif %}>Doutorado</option>
+            </select>
+        </div>
+    </div>
+    <div class="item">
+        <div>Tipo de Aula</div>
+        <div>
+            <span><input type="radio" name="class_type" value="Presencial" {% if teacher.class_type == "Presencial" %} checked="checked" {% endif %}>Presencial</span>
+            <span><input type="radio" name="class_type" value="EAD" {% if teacher.class_type == "EAD" %} checked="checked" {% endif %}>EAD</span>
+        </div>
+    </div>
+    <div class="item">
+        <div>Área de atuação</div>
+        <div>
+            <input type="text" name="services" placeholder="separe os serviços prestados por vírgula" value="{{teacher.services}}">
+        </div>
+    </div>
+</div>

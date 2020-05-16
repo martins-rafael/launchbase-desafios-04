@@ -1,0 +1,48 @@
+<div class="item-wraper">
+    <div class="item">
+        <div>URL do Avatar</div>
+        <div>
+            <input type="url" name="avatar_url" placeholder="http://" value="{{student.avatar_url}}">
+        </div>
+    </div>
+    <div class="item">
+        <div>Nome completo</div>
+        <div>
+            <input type="text" name="name" value="{{student.name}}">
+        </div>
+    </div>
+    <div class="item">
+        <div>Email</div>
+        <div>
+            <input type="email" name="email" value="{{student.email}}">
+        </div>
+    </div>
+    <div class="item">
+        <div>Data de nascimento</div>
+        <div>
+            <input type="date" name="birth" value="{{student.birth}}">
+        </div>
+    </div>
+    <div class="item">
+        <div>Ano escolar</div>
+        <div>
+            <select name="education">
+                <option disabled="disabled" selected="selected" value="value">Selecione uma opção</option>
+                <option value="5EF" {% if student.education == "5EF" %} selected="selected" {% endif %}>5º Ano do Fundamental</option>
+                <option value="6EF" {% if student.education == "6EF" %} selected="selected" {% endif %}>6º Ano do Fundamental</option>
+                <option value="7EF" {% if student.education == "7EF" %} selected="selected" {% endif %}>7º Ano do Fundamental</option>
+                <option value="8EF" {% if student.education == "8EF" %} selected="selected" {% endif %}>8º Ano do Fundamental</option>
+                <option value="9EF" {% if student.education == "9EF" %} selected="selected" {% endif %}>9º Ano do Fundamental</option>
+                <option value="1EM" {% if student.education == "1EM" %} selected="selected" {% endif %}>1º Ano do Ensino Médio</option>
+                <option value="2EM" {% if student.education == "2EM" %} selected="selected" {% endif %}>2º Ano do Ensino Médio</option>
+                <option value="3EM" {% if student.education == "3EM" %} selected="selected" {% endif %}>3º Ano do Ensino Médio</option>
+            </select>
+        </div>
+    </div>
+    <div class="item">
+        <div>Carga horária semanal</div>
+        <div>
+            <input type="number" name="weekly_classes" placeholder="Digite somente o número" value="{{student.weekly_classes}}">
+        </div>
+    </div>
+</div>
