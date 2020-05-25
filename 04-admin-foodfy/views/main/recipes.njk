@@ -5,17 +5,15 @@
 {% endblock %}
 
 {% block content %}
-    <section>
-        <div class="container">
-            <div class="recipe-container">
-                {% for recipe in recipes %}
-                    <div class="recipe" id="{{loop.index -1}}">
-                        <img src="{{recipe.image}}" alt="imagem de {{recipe.title}}">
-                        <h3 class="title">{{recipe.title}}</h3>
-                        <p class="author">por {{recipe.author}}</p>
-                    </div>
-                {% endfor %}
-            </div>
+    <section class="container">
+        <div class="recipe-container">
+            {% for recipe in recipes %}
+                <div class="recipe">
+                    <img src="{{recipe.image}}" alt="imagem de {{recipe.title}}">
+                    <h3 class="title">{{recipe.title}}</h3>
+                    <p class="author">por {{recipe.author}}</p>
+                </div>
+            {% endfor %}
         </div>
     </section>
 {% endblock %}

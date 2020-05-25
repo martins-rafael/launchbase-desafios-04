@@ -9,11 +9,11 @@ routes.get('/recipes', main.recipes)
 routes.get('/recipes/:index', main.recipe)
 
 routes.get('/admin/recipes', recipes.index)
-// routes.get('/admin/create', recipes.create)
-// routes.get('/admin/:index', recipes.show)
-// routes.get('/admin/:index/edit', recipes.edit)
-// routes.post('/admin/recipes', recipes.post)
-// routes.put('/admin/recipes', recipes.put)
-// routes.delete('/admin/recipes', recipes.delete)
+routes.get('/admin/recipes/create', recipes.create)
+routes.get('/admin/recipes/:index', recipes.show)
+routes.get('/admin/recipes/:index/edit', recipes.edit)
+routes.post('/admin/recipes', recipes.post)
+routes.put('/admin/recipes/:index', recipes.put)
+routes.delete('/admin/recipes/:index', recipes.delete)
 
 module.exports = routes
