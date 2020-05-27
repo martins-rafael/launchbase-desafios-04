@@ -19,4 +19,5 @@
         <form id="form-delete" action="/admin/recipes/{{recipe.index}}?_method=delete" method="post"></form>
     </section>
     {% include "admin/addFields.njk" %}
+    {% include "admin/confirm.njk" %}
 {% endblock %}
