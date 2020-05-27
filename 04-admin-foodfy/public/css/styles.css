@@ -23,6 +23,7 @@ body {
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     color: var(--default-black);
+    overflow-y: overlay
 }
 
 .container {
